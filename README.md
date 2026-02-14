@@ -1,72 +1,65 @@
+# 📦 Controle de Lançamentos
 
-📦 Controle de Lançamentos
 Sistema completo para gerenciamento e conferência de códigos, desenvolvido com Node.js, Express, SQLite e HTML/CSS/JavaScript puro.
 
-https://img.shields.io/badge/vers%C3%A3o-1.0.0-blue
-https://img.shields.io/badge/Node.js-18%252B-green
-https://img.shields.io/badge/licen%C3%A7a-MIT-orange
+![Versão](https://img.shields.io/badge/versão-1.0.0-blue)
+![Node](https://img.shields.io/badge/Node.js-18%2B-green)
+![Licença](https://img.shields.io/badge/licença-MIT-orange)
 
-📋 Sobre o Projeto
-O Controle de Lançamentos é uma aplicação web intuitiva para gerenciar códigos, permitindo:
+## 📋 Sobre o Projeto
 
-Adicionar novos códigos
+O **Controle de Lançamentos** é uma aplicação web intuitiva para gerenciar códigos, permitindo:
+- Adicionar novos códigos
+- Conferir itens (mover para lista de conferidos)
+- Desfazer conferências
+- Pesquisar códigos em tempo real
+- Excluir itens individualmente ou limpar todos os conferidos
+- Visualizar estatísticas com contadores
 
-Conferir itens (mover para lista de conferidos)
+## 🚀 Tecnologias Utilizadas
 
-Desfazer conferências
+- **Backend:** Node.js, Express
+- **Banco de Dados:** SQLite3
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Estilização:** CSS com animações e gradientes
+- **Ícones:** Emojis e SVG
 
-Pesquisar códigos em tempo real
+## ✨ Funcionalidades
 
-Excluir itens individualmente ou limpar todos os conferidos
+### ✅ Gerenciamento de Códigos
+- **Adicionar** novos códigos à lista de pendentes
+- **Conferir** itens (movem para lista de conferidos)
+- **Desfazer** conferência (retornam para pendentes)
+- **Excluir** itens individualmente
+- **Limpar** todos os itens conferidos de uma vez
 
-Visualizar estatísticas com contadores
+### 🔍 Pesquisa
+- Busca em tempo real por qualquer código
+- Resultados mostram status (pendente/conferido) e data
+- Interface destacada para resultados
 
-🚀 Tecnologias Utilizadas
-Backend: Node.js, Express
+### 📊 Estatísticas
+- Contador de itens pendentes
+- Contador de itens conferidos
+- Cards interativos com animações
 
-Banco de Dados: SQLite3
+### 🎨 Design Moderno
+- Gradientes animados no fundo
+- Efeitos de hover em todos os elementos
+- Notificações estilo toast com animações
+- Modais de confirmação elegantes
+- Scrollbar personalizada
+- Design responsivo para mobile
 
-Frontend: HTML5, CSS3, JavaScript (ES6+)
+## 🛠️ Como Instalar e Executar
 
-Estilização: CSS com animações e gradientes
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- NPM (Node Package Manager)
 
-Ícones: Emojis e SVG
+### Passo a passo
 
-✨ Funcionalidades
-✅ Gerenciamento de Códigos
-Adicionar novos códigos à lista de pendentes
-
-Conferir itens (movem para lista de conferidos)
-
-Desfazer conferência (retornam para pendentes)
-
-Excluir itens individualmente
-
-Limpar todos os itens conferidos de uma vez
-
-🔍 Pesquisa
-Busca em tempo real por qualquer código
-
-Resultados mostram status (pendente/conferido) e data
-
-Interface destacada para resultados
-
-📊 Estatísticas
-Contador de itens pendentes
-
-Contador de itens conferidos
-
-Cards interativos com animações
-
-🎨 Design Moderno
-Gradientes animados no fundo
-
-Efeitos de hover em todos os elementos
-
-Notificações estilo toast com animações
-
-Modais de confirmação elegantes
-
-Scrollbar personalizada
-
-Design responsivo para mobile
+1. **Clone o repositório**
+```bash
+git clone https://github.com/seu-usuario/controle-lancamentos.git
+cd controle-lancamentos
