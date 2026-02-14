@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Controle de Lançamentos</title>
-</head>
-<link rel="stylesheet" href="style.css">
+    <title>Controle de Lançamentos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- HEADER - Cabeçalho -->
         <div class="header">
             <h1>📦 Controle de Lançamentos</h1>
-            <p>Sistema para gerenciar e conferir códigos</p>
+            <p>Gerencie seus códigos de forma eficiente</p>
         </div>
 
-        <!-- MAIN CONTENT - Conteúdo Principal -->
         <div class="content">
-            <!-- INPUT AREA - Área de digitação -->
+            <!-- Área de Adicionar -->
             <div class="input-group">
                 <input type="text" id="codigo" placeholder="Digite o código" autocomplete="off">
                 <button onclick="adicionar()">Adicionar</button>
             </div>
 
-            <!-- PENDENTES - Lista de itens -->
-            <div class="pendentes">
-                <h2>⏳ Pendentes</h2>
-                <ul id="lista">
-                    <li class="empty-message">Nenhum item pendente</li>
-                </ul>
+            <!-- Área de Pesquisa -->
+            <div class="search-group">
+                <input type="text" id="pesquisa" placeholder="🔍 Pesquisar códigos..." autocomplete="off">
+                <button onclick="pesquisar()">Buscar</button>
+                <button onclick="limparPesquisa()" class="btn-secondary">Limpar</button>
+            </div>
+
+            <!-- Resultado da Pesquisa -->
+            <div id="resultado-pesquisa" class="search-result" style="display: none;">
+                <h3>Resultados da Pesquisa</h3>
+                <ul class="item-list" id="lista-pesquisa"></ul>
+                <button onclick="fecharPesquisa()" class="btn-secondary">Fechar</button>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-card pendentes">
+                    <div class="stat-value" id="total-pendentes">0</div>
+                    <div class="stat-label">Pendentes</div>
+                </div>
+                <div class="stat-card conferidas">
+                    <div class="stat-value" id="total-conferidas">0</div>
+                    <div class="stat-label">Conferidas</div>
+                </div>
+            </div>
+
+            <!-- Listas -->
+            <div class="lists-container">
+                <div class="list-section pendentes">
+                    <h2>⏳ Pendentes</h2>
+                    <ul class="item-list" id="lista-pendentes"></ul>
+                </div>
+
+                <div class="list-section conferidas">
+                    <h2>✅ Conferidas 
+                        <button onclick="limparConferidos()" class="btn-limpar" title="Limpar todos os conferidos">🗑️ Limpar</button>
+                    </h2>
+                    <ul class="item-list" id="lista-conferidas"></ul>
+                </div>
             </div>
         </div>
 
-        <!-- FOOTER - Rodapé -->
         <div class="footer">
-            <p>© 2025 - Sistema de Controle de Lançamentos</p>
-            <p>Desenvolvido com <span style="color: #e53e3e;">❤</span> para facilitar seu trabalho</p>
+            <p>© 2026 - Sistema de Controle de Lançamentos</p>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
-</html>
 </html>
