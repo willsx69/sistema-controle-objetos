@@ -3,18 +3,40 @@
 <head>
   <title>Controle de Lançamentos</title>
 </head>
-
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
- 
-  <h1>Controle de Lançamentos</h1>
+    <div class="container">
+        <!-- HEADER - Cabeçalho -->
+        <div class="header">
+            <h1>📦 Controle de Lançamentos</h1>
+            <p>Sistema para gerenciar e conferir códigos</p>
+        </div>
 
-  <input type="text" id="codigo" placeholder="Digite o código">
-  <button onclick="adicionar()">Adicionar</button>
+        <!-- MAIN CONTENT - Conteúdo Principal -->
+        <div class="content">
+            <!-- INPUT AREA - Área de digitação -->
+            <div class="input-group">
+                <input type="text" id="codigo" placeholder="Digite o código" autocomplete="off">
+                <button onclick="adicionar()">Adicionar</button>
+            </div>
 
-  <h2>Pendentes</h2>
-  <ul id="lista"></ul>
- 
-  <script src="script,.js"></script>
-  
+            <!-- PENDENTES - Lista de itens -->
+            <div class="pendentes">
+                <h2>⏳ Pendentes</h2>
+                <ul id="lista">
+                    <li class="empty-message">Nenhum item pendente</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- FOOTER - Rodapé -->
+        <div class="footer">
+            <p>© 2025 - Sistema de Controle de Lançamentos</p>
+            <p>Desenvolvido com <span style="color: #e53e3e;">❤</span> para facilitar seu trabalho</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+</html>
 </html>
